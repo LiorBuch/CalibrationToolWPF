@@ -1,0 +1,25 @@
+﻿<Window x:Class="CalibrationToolWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalibrationToolWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Home">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="Settings">
+                <Grid Background="#FFE5E5E5">
+                    <Button x:Name="testBTN" Content="clickme" HorizontalAlignment="Left" Height="35" Margin="400,0,0,0" VerticalAlignment="Center" Width="51" Click="clickmeClick"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Test">
+                <Grid Background="#FFE5E5E5">
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

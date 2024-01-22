@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="InstrumentV3">
+      <HintPath>dlls\InstrumentV3.dll</HintPath>
+    </Reference>
+    <Reference Include="Ivi.Visa">
+      <HintPath>dlls\Ivi.Visa.dll</HintPath>
+    </Reference>
+    <Reference Include="MIDUPROBJECTLib">
+      <HintPath>dlls\MIDUPROBJECTLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Common">
+      <HintPath>dlls\NationalInstruments.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="NationalInstruments.Visa">
+      <HintPath>dlls\NationalInstruments.Visa.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
