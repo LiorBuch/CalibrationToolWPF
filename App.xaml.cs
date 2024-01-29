@@ -17,7 +17,6 @@ namespace CalibrationToolWPF
         {
             NotificationManager.getInstance().closeAllNotifications();
             SessionManager.getInstance().closeAllSessions();
-            Trace.WriteLine("goodbye");
             base.OnExit(e);
         }
     }

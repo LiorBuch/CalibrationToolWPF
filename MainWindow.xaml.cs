@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using System.Windows;
 using CalibrationToolWPF.notifications;
+using CalibrationToolWPF.views;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -22,12 +23,7 @@ namespace CalibrationToolWPF
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void clickmeClick(object sender, RoutedEventArgs e)
-        {
-            testBTN.Content = "clock";
-            NotificationManager.getInstance().showAlertPopup(this);
+            var cont = new SettingsPage();
         }
     }
 }

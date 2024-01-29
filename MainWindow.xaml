@@ -3,20 +3,28 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CalibrationToolWPF"
+        xmlns:local="clr-namespace:CalibrationToolWPF.views"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl>
-            <TabItem Header="Home">
+            <TabItem Header="HomeTb" x:Name="homeTab" Width="100">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem Header="Settings">
+            <TabItem Header="Settings" x:Name="settingsTab" Width="100">
                 <Grid Background="#FFE5E5E5">
-                    <Button x:Name="testBTN" Content="clickme" HorizontalAlignment="Left" Height="35" Margin="400,0,0,0" VerticalAlignment="Center" Width="51" Click="clickmeClick"/>
+                    <local:SettingsPage/>
                 </Grid>
             </TabItem>
-            <TabItem Header="Test">
+            <TabItem Header="Test" x:Name="testTab" Width="100">
+                <Grid Background="#FFE5E5E5">
+                </Grid>
+            </TabItem>
+            <TabItem Header="Reports" x:Name="ReportTab" Width="100">
+                <Grid Background="#FFE5E5E5">
+                </Grid>
+            </TabItem>
+            <TabItem Header="Test" x:Name="scriptTab" Width="100">
                 <Grid Background="#FFE5E5E5">
                 </Grid>
             </TabItem>
