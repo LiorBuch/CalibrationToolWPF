@@ -26,8 +26,21 @@ namespace CalibrationToolWPF.views
             InitializeComponent();
         }
 
-        private void clickmeClick(object sender, RoutedEventArgs e)
+        private void showAlertPopup(object sender, RoutedEventArgs e)
         {
+            Window window = Window.GetWindow(this);
+            NotificationManager.getInstance().showAlertPopup(window);
+        }
+
+        private void showErrorPopup(object sender, RoutedEventArgs e)
+        {
+            Window window = Window.GetWindow(this);
+            NotificationManager.getInstance().showErrorPopup(window);
+        }
+
+        private void showOkPopup(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

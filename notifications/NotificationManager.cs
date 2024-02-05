@@ -17,6 +17,7 @@ namespace CalibrationToolWPF.notifications
     {
         private static Lazy<NotificationManager> notificationManager = new Lazy<NotificationManager>(() => new NotificationManager());
         private AlertPopup alertPopup = new AlertPopup();
+        private ErrorPopup errorPopup = new ErrorPopup();
         private Popup popup;
         private NotificationManager()
         {
@@ -38,6 +39,18 @@ namespace CalibrationToolWPF.notifications
                 popup.Child = alertPopup;
                 popup.Width = alertPopup.Width;
                 popup.Height = alertPopup.Height;
+                this.popup.IsOpen = true;
+                this.popup.StaysOpen = false;
+            });
+        }
+        public void showErrorPopup(Window window)
+        {
+            window.Dispatcher.Invoke(() =>
+            {
+                popup.PlacementTarget = window;
+                popup.Child = errorPopup;
+                popup.Width = errorPopup.Width;
+                popup.Height = errorPopup.Height;
                 this.popup.IsOpen = true;
                 this.popup.StaysOpen = false;
             });

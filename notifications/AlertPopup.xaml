@@ -4,12 +4,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:CalibrationToolWPF.notifications"
-             mc:Ignorable="d" Height="114" Width="191">
-    <Grid>
-        <Border BorderThickness="1">
-            <TextBlock Name="alertPopupDialogText" Background="LightBlue" Foreground="Blue" Padding="30">
-                Popup Text
-            </TextBlock>
+             mc:Ignorable="d" Height="150" Width="294">
+    <Grid Background="Snow">
+        <Image Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Source="{StaticResource alertIcon}"></Image>
+        <Border BorderThickness="4" Height="150" Width="294">
+            <TextBlock x:Name="alertPopupDialogText" Background="LightGray" Foreground="Black" TextAlignment="Center" Padding="20" Margin="-4,74,-4,-4" Text="Alert Popup"/>
         </Border>
     </Grid>
 </UserControl>

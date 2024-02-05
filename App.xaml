@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:CalibrationToolWPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="assets/AppIcons.xaml"/>
+
     </Application.Resources>
 </Application>

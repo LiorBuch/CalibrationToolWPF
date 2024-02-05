@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="CalibrationToolWPF.notifications.OkPopup"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CalibrationToolWPF.notifications"
+             mc:Ignorable="d" 
+             d:DesignHeight="150" d:DesignWidth="294">
+    <Grid Background="Snow">
+        <Image Width="40" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" Source="{StaticResource okIcon}"></Image>
+        <Border BorderThickness="4" Height="150" Width="294">
+            <TextBlock Name="alertPopupDialogText" Background="LightGray" Foreground="Black" TextAlignment="Center" Padding="20" Margin="-4,74,-4,-4">
+                Ok Popup
+            </TextBlock>
+        </Border>
+    </Grid>
+</UserControl>

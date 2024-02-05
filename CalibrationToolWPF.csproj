@@ -9,6 +9,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="assets\icons\caution.png" />
+    <None Remove="assets\icons\correct.png" />
+    <None Remove="assets\icons\warning.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="InstrumentV3">
       <HintPath>dlls\InstrumentV3.dll</HintPath>
     </Reference>
@@ -24,6 +30,12 @@
     <Reference Include="NationalInstruments.Visa">
       <HintPath>dlls\NationalInstruments.Visa.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="assets\icons\caution.png" />
+    <Resource Include="assets\icons\correct.png" />
+    <Resource Include="assets\icons\warning.png" />
   </ItemGroup>
 
 </Project>
