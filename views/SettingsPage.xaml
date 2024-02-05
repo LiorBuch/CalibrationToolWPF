@@ -9,6 +9,6 @@
     <Grid>
         <Button x:Name="testBTN" Content="Test Alert Popup" HorizontalAlignment="Left" Height="34" VerticalAlignment="Top" Width="103" Click="showAlertPopup" Margin="35,44,0,0"/>
         <Button Content="Test Error Popup" HorizontalAlignment="Left" Height="34" Margin="170,44,0,0" VerticalAlignment="Top" Width="108" Click="showErrorPopup" IsDefault="True"/>
-        <Button Content="test ok popup" HorizontalAlignment="Left" Height="34" Margin="323,44,0,0" VerticalAlignment="Top" Click="showOkPopup" Width="107"/>
+        <Button Content="test ok popup" HorizontalAlignment="Left" Height="34" Margin="299,44,0,0" VerticalAlignment="Top" Click="showOkPopup" Width="107"/>
     </Grid>
 </UserControl>

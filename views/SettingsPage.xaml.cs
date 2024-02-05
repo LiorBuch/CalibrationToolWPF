@@ -40,7 +40,8 @@ namespace CalibrationToolWPF.views
 
         private void showOkPopup(object sender, RoutedEventArgs e)
         {
-
+            Window window = Window.GetWindow(this);
+            NotificationManager.getInstance().showOkPopup(window);
         }
     }
 }

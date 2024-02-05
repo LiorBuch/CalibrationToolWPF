@@ -8,24 +8,26 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl>
-            <TabItem Header="HomeTb" x:Name="homeTab" Width="100">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-            <TabItem Header="Settings" x:Name="settingsTab" Width="100">
+            <TabItem Header="Home Tab" x:Name="homeTab" Width="100">
                 <Grid Background="#FFE5E5E5">
-                    <local:SettingsPage/>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="81*"/>
+                        <ColumnDefinition Width="713*"/>
+                    </Grid.ColumnDefinitions>
                 </Grid>
             </TabItem>
             <TabItem Header="Test" x:Name="testTab" Width="100">
                 <Grid Background="#FFE5E5E5">
+                    <local:TestPage/>
                 </Grid>
             </TabItem>
             <TabItem Header="Reports" x:Name="ReportTab" Width="100">
                 <Grid Background="#FFE5E5E5">
                 </Grid>
             </TabItem>
-            <TabItem Header="Test" x:Name="scriptTab" Width="100">
+            <TabItem Header="Settings" x:Name="settingsTab" Width="100">
                 <Grid Background="#FFE5E5E5">
+                    <local:SettingsPage/>
                 </Grid>
             </TabItem>
         </TabControl>
